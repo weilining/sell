@@ -11,7 +11,8 @@ git push --set-upstream origin doc
 # github创建继承当前分支的分支
 ```git
 git checkout -b branchname
-
+git commit -am "init"
+git push --set-upstream origin branchname
 ```
 # 说明
 如果修改的文件需要全部提交，我一般都是 git commit -am "commit messages" 如果修改的文件只提交一部分，用 git add -p git commit -m "commit messages"
