@@ -1,7 +1,0 @@
-#logging:
-#  pattern:
-#    console: "%d - %msg%n"
-##  path: /Users/admin/Documents/tomcat/
-#  file: /Users/admin/Documents/tomcat/sell.log
-#  level:
-#    com.imooc.LoggerTest: debug
