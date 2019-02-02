@@ -31,6 +31,19 @@ git merge doc
 # github创建新分支并继承当前分支
 ```
 git checkout -b newbranch
-
+git add -A
+git commit -m "end"
+git push --set-upstream origin newbranch
 ```
 # 数据库对象（表的映射）
+写完DAO开始写service
+# java复习
+## implements使用
+java中能够定义接口 接口是一种变相的抽象类 接口的定义可以实现java中的多继承问题 java中类与类之间只能单继承 关键字 是extends 而对于类来说可以实现接口 关键字就用implements 表示该类实现接口 接口与接口是也可以用extends来继承
+extends是继承父类，只要那个类不是声明为final或者那个类定义为abstract的就能继承，JAVA中不支持多重继承，但是可以用接口来实现，这样就要用到implements，继承只能继承一个类，但implements可以实现多个接口，用逗号分开就行了
+比如
+class A extends B implements C,D,E
+# git初始化注意事项
+我经常向远程仓库提交的第一个文件就是.gitignore文件，这样后面就可以随意提交，不用担心将一些不必要的文件提交了。
+# macOS idea跳到下一行 command + shift + enter
+#  @Transactional注解在test下成功与否都不会写入数据库

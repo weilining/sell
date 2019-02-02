@@ -1,6 +1,7 @@
 package com.imooc.dataobject;
 
 import lombok.Data;
+import lombok.Getter;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
@@ -15,6 +16,7 @@ import java.util.Date;
 @Entity
 @DynamicUpdate
 @Data
+
 public class ProductCategory {
     @Id
     @GeneratedValue
@@ -24,6 +26,10 @@ public class ProductCategory {
 
     public ProductCategory() {
     }
+
+//    public Integer getCategoryId() {
+//        return categoryId;
+//    }
 
     public ProductCategory(String categoryName, Integer categoryType) {
         this.categoryName = categoryName;

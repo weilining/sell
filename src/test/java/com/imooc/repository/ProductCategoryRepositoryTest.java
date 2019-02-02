@@ -44,6 +44,4 @@ public class ProductCategoryRepositoryTest {
         Assert.assertNotEquals(0,result.size());
     }
 
-
-
 }
