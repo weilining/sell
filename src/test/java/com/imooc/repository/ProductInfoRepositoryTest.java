@@ -34,7 +34,7 @@ public class ProductInfoRepositoryTest {
         productInfo.setProductPrice(new BigDecimal(3.2));
         productInfo.setProductStock(100);
         productInfo.setProductDescription("很好喝的粥");
-        productInfo.setProductId("http://xxx.jpg");
+        productInfo.setProductIcon("http://xxx.jpg");
         productInfo.setProductStatus(0);
         productInfo.setCategoryType(2);
 
