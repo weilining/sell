@@ -58,3 +58,5 @@ git push origin :doc
 ```
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
+# @Entity作用
+@entity是指这个类映射有数据库表，那么你不使用这个类时，后台应该不会对其进行处理吧，只有当你从数据库读取数据时，由于你要读取的表映射有实体类（@entity注释的），那么后台应该会自动帮你实例化一个对象，然后将数据库中的数据填充到对象中吧！
