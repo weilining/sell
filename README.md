@@ -47,11 +47,12 @@ class A extends B implements C,D,E
 我经常向远程仓库提交的第一个文件就是.gitignore文件，这样后面就可以随意提交，不用担心将一些不必要的文件提交了。
 # macOS idea跳到下一行 command + shift + enter
 #  @Transactional注解在test下成功与否都不会写入数据库
-# git删除分支
+# git删除远端分支 本地分支
 git push origin 【空格】【冒号】【需要删除的分支名字】
 比如我github上有master和doc分支，我现在想着删除doc分支，命令如下：
 ```git
-git push origin :doc
+git push origin --delete doc
+git branch -D doc
 ```
 # macOS .DS_Store文件处理
 终端输入
