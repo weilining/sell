@@ -61,3 +61,81 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
 # @Entity作用
 @entity是指这个类映射有数据库表，那么你不使用这个类时，后台应该不会对其进行处理吧，只有当你从数据库读取数据时，由于你要读取的表映射有实体类（@entity注释的），那么后台应该会自动帮你实例化一个对象，然后将数据库中的数据填充到对象中吧！
+
+
+# 删除GIT中的.DS_Store||删除所有隐藏.DS_store
+```
+删除项目中的所有.DS_Store。这会跳过不在项目中的 .DS_Store
+1.find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+将 .DS_Store 加入到 .gitignore
+2.echo .DS_Store >> ~/.gitignore
+更新项目
+3.git add --all
+4.git commit -m '.DS_Store banished!'
+```
+# google国内注册（亲测）
+手机号码在线接收注册地址,任意浏览器都可以
+这是官方手机发送验证注册地址的网址:https://accounts.google.com/SignUpMobile
+
+![image-20190206234303636](images/image-20190206234303636.png)
+
+更改中国+86 ,填入手机号码,短信会接收到一个注册的短网址,把短网址复制输入到任意浏览器打开.按照提示来完成.
+
+代理很重要!代理很重要!代理很重要!
+
+# brew安装
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+# macOS安装python3
+安装前先搜索一下是否已经存在python3的包：
+
+```shell
+brew search python3
+```
+
+![image-20190207172846850](images/image-20190207172846850.png)
+
+已经存在，我们可以直接安装了：
+
+```
+brew install python3
+brew link python3
+brew info python3
+python3 -V
+```
+
+![image-20190207184119749](images/image-20190207184119749.png)
+
+发现python3被安装到了/usr/local/bin/python3目录下
+
+# pycharm
+
+![image-20190207184347645](images/image-20190207184347645.png)
+
+![image-20190207191035582](images/image-20190207191035582.png)
+
+```python
+#!/usr/bin/env python 
+# -*- coding:utf-8 -*-
+__author__='$USER'
+
+if __name__ == '__main__':
+    print("Hello Python")
+```
+
+![image-20190207191125408](images/image-20190207191125408.png)
+
+![image-20190207192110949](images/image-20190207192110949.png)
+
+```python
+#!/usr/bin/env python 
+# -*- coding:utf-8 -*-
+__author__ = 'admin'
+    
+    
+if __name__ == '__main__':
+    print("Hello Python")
+
+```
+
