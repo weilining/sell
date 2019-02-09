@@ -46,7 +46,6 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    @Transactional
     public void increaseStock(List<CartDTO> cartDTOSList) {
 
     }
@@ -55,12 +54,11 @@ public class ProductServiceImpl implements ProductService {
     @Transactional
     public void decreaseStock(List<CartDTO> cartDTOList) {
         for (CartDTO cartDTO : cartDTOList) {
-
             ProductInfo productInfo = repository.findOne(cartDTO.getProductId());
             if (productInfo == null) {
                 throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
             }
-            Integer result = productInfo.getProductStatus() - cartDTO.getProductQuantity();
+            Integer result = productInfo.getProductStock() - cartDTO.getProductQuantity();
             if (result < 0){
                 throw new SellException(ResultEnum.PRODUCT_STOCK_ERROR);
             }
