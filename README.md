@@ -141,3 +141,9 @@ if __name__ == '__main__':
 
 # 实体类定好->写DAO层
 # dao层就是数据库的一些增删改查，相对来说比较简单；而controller层是数据的展现，也比较简单；所有的逻辑我们都放service层（最复杂）
+# product_not_exist变成大写,快捷键 command+shift+u
+
+# 快捷键command+e效果图
+
+![image-20190209134125909](images/image-20190209134125909.png)
+
