@@ -4,6 +4,7 @@ import com.imooc.dataobject.OrderDetail;
 import com.imooc.dto.OrderDTO;
 import com.imooc.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,12 +42,20 @@ public class OrderServiceImplTest {
         OrderDetail o1 = new OrderDetail();
         o1.setProductId("1234568");
         o1.setProductQuantity(1);
-        orderDetailList.add(o1);
-        orderDTO.setOrderDetailList(orderDetailList);
 
+
+        OrderDetail o2=new OrderDetail();
+        o2.setProductId("123457");
+        o2.setProductQuantity(2);
+
+        orderDetailList.add(o2);
+        orderDetailList.add(o1);
+
+        orderDTO.setOrderDetailList(orderDetailList);
 
         OrderDTO result = orderService.create(orderDTO);
         log.info("【创建订单】 result={}",result);
+        Assert.assertNotNull(result);
     }
 
     @Test
