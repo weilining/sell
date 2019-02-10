@@ -152,3 +152,11 @@ if __name__ == '__main__':
 # 调整顺序快捷键 command + shif +up箭头
 # 写程序的时候可以先把逻辑列清楚，这样写的时候不至于漏掉
 # command + .快速收小方法
+# POST
+```$xslt
+name:"张三"
+phone:"18888888888"
+address:"坎坎坷坷"
+openid:"adfasdfasdfasfdasd"
+items:[{productId:"1111111111111",productQuantity:2}]
+```
