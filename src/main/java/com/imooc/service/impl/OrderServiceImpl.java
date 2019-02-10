@@ -125,7 +125,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     @Transactional
-    public OrderDTO cancle(OrderDTO orderDTO) {
+    public OrderDTO cancel(OrderDTO orderDTO) {
         OrderMaster orderMaster=new OrderMaster();
 
 //        判断订单状态

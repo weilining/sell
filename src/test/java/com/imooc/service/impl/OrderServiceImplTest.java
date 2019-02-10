@@ -80,9 +80,9 @@ public class OrderServiceImplTest {
     }
 
     @Test
-    public void cancle() {
+    public void cancel() {
         OrderDTO orderDTO = orderService.findOne(ORDER_ID);
-        OrderDTO result = orderService.cancle(orderDTO);
+        OrderDTO result = orderService.cancel(orderDTO);
         Assert.assertEquals(OrderStatusEnum.CANCEL.getCode(), result.getOrderStatus());
     }
 

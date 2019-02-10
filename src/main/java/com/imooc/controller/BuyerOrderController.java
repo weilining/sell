@@ -70,9 +70,33 @@ public class BuyerOrderController {
         PageRequest request=new PageRequest(page,size);
         Page<OrderDTO> orderDTOPage = orderService.findList(openid, request);
         //转存Date -> Long
+//
         return ResultVOUtil.success(orderDTOPage.getContent());
+//        ResultVO resultVO=new ResultVO();
+//        resultVO.setCode(0);
+//        return resultVO;
+//        return ResultVOUtil.success();
     }
 
     //订单详情
+    @GetMapping("detail")
+    public ResultVO<OrderDTO> detail(@RequestParam("openid") String openid,
+                                     @RequestParam("orderId")String orderId){
+        //TODO 不安全的做法，改进
+        OrderDTO orderDTO = orderService.findOne(orderId);
+        return ResultVOUtil.success(orderDTO);
+    }
+
+
     //取消订单
+    @PostMapping("/cancel")
+
+    public ResultVO cancel(@RequestParam("openid") String openid,
+                           @RequestParam("orderId")String orderId){
+        //TODO 不安全的做法，改进
+        OrderDTO orderDTO = orderService.findOne(orderId);
+
+        orderService.cancel(orderDTO);
+        return ResultVOUtil.success();
+    }
 }
