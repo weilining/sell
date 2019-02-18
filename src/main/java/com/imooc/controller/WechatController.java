@@ -33,7 +33,7 @@ public class WechatController {
 
         //1.配置
         //2.调用方法
-        String url = "";
+        String url = "http://weilining.ml/sell/wechat/userInfo";
         String redirectUrl = wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAUTH2_SCOPE_BASE, URLEncoder.encode(returnUrl));
 //        log.info("【微信网页授权】获取code, result={}", redirectUrl);
         return "redirect:" + redirectUrl;
