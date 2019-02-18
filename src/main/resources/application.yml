@@ -25,6 +25,7 @@ server:
 wechat:
   mpAppId: wxc8951dba20e8ba76
   mpAppSecret: caff618149de3e744ac6beab42047bc1
-  mchId: 111123412341234
+  mchId: 1409146202
   mchKey: c9734132412341234
   keyPath: /Users/admin/Desktop
+  notifyUrl: http://weilining.ml/sell/pay/notify
