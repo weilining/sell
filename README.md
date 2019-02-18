@@ -165,5 +165,12 @@ items:[{productId:"1111111111111",productQuantity:2}]
 
 # ipv6回环测试地址http://[::1]:8080/sell/buyer/product/list
 
-
 # http://172.20.10.3/#/order没有进行openid判断、虚拟机设置 5-4买家商品（下）
+
+
+
+# iphone给电脑手机开热点，使用ipv6代替内网渗透
+
+![image-20190218233729250](images/image-20190218233729250.png)
+
+![image-20190218233629067](images/image-20190218233629067.png)
