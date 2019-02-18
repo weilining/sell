@@ -164,3 +164,6 @@ items:[{productId:"1111111111111",productQuantity:2}]
 # 实现类快捷键 option + command +b
 
 # ipv6回环测试地址http://[::1]:8080/sell/buyer/product/list
+
+
+# http://172.20.10.3/#/order没有进行openid判断、虚拟机设置 5-4买家商品（下）
