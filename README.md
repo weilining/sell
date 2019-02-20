@@ -232,3 +232,7 @@ items:[{productId:"1111111111111",productQuantity:2}]
  git config --global user.name "myname"
  git config --global user.email "myname@email.com
  这2个要和github上面的一致, 特别是email, 否则不会计入contributions
+ 
+git checkout master
+git merge 9-4
+git checkout 9-4
