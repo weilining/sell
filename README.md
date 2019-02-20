@@ -232,3 +232,6 @@ items:[{productId:"1111111111111",productQuantity:2}]
  git config --global user.name "myname"
  git config --global user.email "myname@email.com
  这2个要和github上面的一致, 特别是email, 否则不会计入contributions
+ 
+ 
+ # 这里视频有问题，最后没有把order/list.ftl的两个参数修改getOrderStatusEnum().message、getPayStatusEnum().message
