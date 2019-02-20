@@ -227,3 +227,8 @@ items:[{productId:"1111111111111",productQuantity:2}]
  # 快捷键command + option + 鼠标点击接口 快速跳转到实现该接口的方法
  
  # 展示前端页面@Controller
+ 
+ # 让github计入contribution 
+ git config --global user.name "myname"
+ git config --global user.email "myname@email.com
+ 这2个要和github上面的一致, 特别是email, 否则不会计入contributions
