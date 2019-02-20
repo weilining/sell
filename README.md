@@ -233,7 +233,6 @@ items:[{productId:"1111111111111",productQuantity:2}]
  git config --global user.email "myname@email.com
  这2个要和github上面的一致, 特别是email, 否则不会计入contributions
 
-
 git add -A
 git commit -m 'end'
 git push
