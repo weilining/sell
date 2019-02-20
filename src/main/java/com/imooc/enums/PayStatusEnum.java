@@ -18,4 +18,5 @@ public enum PayStatusEnum implements CodeEnum{
     PayStatusEnum(Integer code, String message) {
         this.code = code;
         this.message = message;
-    }}
+    }
+}
