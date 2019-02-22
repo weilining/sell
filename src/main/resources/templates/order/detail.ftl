@@ -1,11 +1,14 @@
 <html>
-<head>
-    <mate charset="utf-8"></mate>
-    <title>卖家订单详情</title>
-    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
-</head>
+<#include "../common/header.ftl">
 <body>
-<div class="container">
+<div id="wrapper" class="toggled">
+
+    <#--边栏sidebar-->
+    <#include "../common/nav.ftl">
+
+    <#--主要内容content-->
+    <div id="page-content-wrapper">
+        <div class="container">
     <div class="row clearfix">
         <div class="col-md-4 column">
             <table class="table table-bordered">
@@ -58,6 +61,8 @@
             <a href="/sell/seller/order/cancel?orderId=${orderDTO.orderId}" class="btn btn-default btn-danger">取消订单</a>
             </#if>
         </div>
+    </div>
+</div>
     </div>
 </div>
 </body>
