@@ -11,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -68,5 +69,16 @@ public class ProductServiceImplTest {
         ProductInfo result = productService.save(productInfo);
         Assert.assertNotNull(result);
 
+    }
+
+    @Test
+    public void onSale(){
+        ProductInfo result = productService.onSale("123456");
+        Assert.assertEquals(ProductStatusEnum.UP,result.getProductStatusEnum());
+    }
+    @Test
+    public void offSale(){
+        ProductInfo result = productService.offSale("123456");
+        Assert.assertEquals(ProductStatusEnum.DOWN,result.getProductStatusEnum());
     }
 }
