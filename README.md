@@ -255,5 +255,14 @@ git merge 10-1 -m "x"
 git checkout 10-1
 git checkout -b 10-2
 
+# 注解
+Spring4.3中引进了｛@GetMapping、@PostMapping、@PutMapping、@DeleteMapping、@PatchMapping｝，来帮助简化常用的HTTP方法的映射，并更好地表达被注解方法的语义。
+
+ @RequestMapping如果没有指定请求方式，将接收Get,Post,Head,Options等所有的请求方式
+
+@GetMapping是一个组合注解，是@RequestMapping(method = RequestMethod.GET)的缩写。
+ 
+@PostMapping是一个组合注解，是@RequestMapping(method = RequestMethod.POST)的缩写。
+
 
 
