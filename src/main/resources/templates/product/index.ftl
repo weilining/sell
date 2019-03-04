@@ -27,12 +27,12 @@
                         </div>
                         <div class="form-group">
                             <label>描述</label>
-                            <input name="productDescription" type="number" class="form-control" value="${(productInfo.productDescription)!""}"/>
+                            <input name="productDescription" type="text" class="form-control" value="${(productInfo.productDescription)!""}"/>
                         </div>
                         <div class="form-group">
                             <label>图片</label>
                             <img height="100" src="${(productInfo.productIcon)!""}" alt="">
-                            <input name="productIcon" type="number" class="form-control" value="${(productInfo.productIcon)!""}"/>
+                            <input name="productIcon" type="text" class="form-control" value="${(productInfo.productIcon)!""}"/>
                         </div>
                         <div class="form-group">
                             <label>类目</label>
@@ -47,7 +47,7 @@
                                 </#list>
                             </select>
                         </div>
-                        <input hidden type="text" name="productid" value="${(productInfo.productId)!""}">
+                        <input hidden type="text" name="productId" value="${(productInfo.productId)!""}">
                         <button type="submit" class="btn btn-default">提交</button>
                     </form>
                 </div>
