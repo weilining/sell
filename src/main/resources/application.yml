@@ -25,7 +25,14 @@ server:
 wechat:
   mpAppId: wxc8951dba20e8ba76
   mpAppSecret: caff618149de3e744ac6beab42047bc1
+  openAppId: wwwwwwwwwwwwwwwwww
+  openAppSecret: wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
   mchId: 1409146202
   mchKey: c9734132412341234
   keyPath: /Users/admin/Desktop
   notifyUrl: http://weilining.ml/sell/pay/notify
+
+projectUrl:
+  wechatMpAuthorize: http://sell.natapp4.cc
+  wechatOpenAuthorize: http://sell.natapp4.cc
+  sell: http://sell.natapp4.cc
