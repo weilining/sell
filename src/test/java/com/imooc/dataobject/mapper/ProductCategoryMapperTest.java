@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.*;
@@ -47,6 +48,34 @@ public class ProductCategoryMapperTest {
     public void findByCategoryType(){
         ProductCategory result = mapper.findByCategoryType(103);
         Assert.assertNotNull(result);
+    }
+
+    @Test
+    public void findByCategoryName(){
+        List<ProductCategory> result = mapper.findByCategoryName("师兄最不爱");
+        Assert.assertNotEquals(0,result.size());
+    }
+
+    @Test
+    public void updateByCategoryType(){
+        int result = mapper.updateByCategoryType("洗", 103);
+        Assert.assertEquals(1,result);
+    }
+
+    @Test
+    public void updateByObject(){
+        ProductCategory productCategory = new ProductCategory();
+        productCategory.setCategoryName("师兄");
+        productCategory.setCategoryType(103);
+        int result = mapper.updateByObject(productCategory);
+        Assert.assertEquals(1,result);
+
+    }
+    @Test
+    public void deleteByCategoryType(){
+        int result = mapper.deleteByCategoryType(103);
+        Assert.assertEquals(1,result);
+
     }
 
 }
