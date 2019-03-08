@@ -34,6 +34,8 @@ wechat:
   mchKey: c9734132412341234
   keyPath: /Users/admin/Desktop
   notifyUrl: http://weilining.ml/sell/pay/notify
+  templateId:
+    orderStatus: adfasdfas
 
 projectUrl:
   wechatMpAuthorize: http://sell.natapp4.cc
