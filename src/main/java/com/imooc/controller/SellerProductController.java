@@ -9,6 +9,8 @@ import com.imooc.service.ProductService;
 import com.imooc.utils.KeyUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
@@ -124,6 +126,8 @@ public class SellerProductController {
      * @return
      */
     @PostMapping("/save")
+//    @CachePut(cacheNames = "product", key = "123")
+//    @CacheEvict(cacheNames = "product", key = "123")
     public ModelAndView save(@Valid ProductForm form,
                              BindingResult bindingResult,
                              Map<String, Object> map) {
@@ -136,9 +140,9 @@ public class SellerProductController {
         ProductInfo productInfo = new ProductInfo();
         try {
             //如果productIdw为空，说明新增
-            if(!StringUtils.isEmpty(form.getProductId())){
+            if (!StringUtils.isEmpty(form.getProductId())) {
                 productInfo = productService.findOne(form.getProductId());
-            }else {
+            } else {
                 form.setProductId(KeyUtil.genUniqueKey());
             }
             BeanUtils.copyProperties(form, productInfo);

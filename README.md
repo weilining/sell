@@ -262,7 +262,7 @@ Spring4.3中引进了｛@GetMapping、@PostMapping、@PutMapping、@DeleteMappin
  @RequestMapping如果没有指定请求方式，将接收Get,Post,Head,Options等所有的请求方式
 
 @GetMapping是一个组合注解，是@RequestMapping(method = RequestMethod.GET)的缩写。
- 
+
 @PostMapping是一个组合注解，是@RequestMapping(method = RequestMethod.POST)的缩写。
 
 # 压测
@@ -270,3 +270,17 @@ ab -n 100 -c 10 http://127.0.0.1/sell/skill/order/123456
 10个线程，100个请求
 ab -n 500 -c 100 http://127.0.0.1/sell/skill/order/123456
 100个线程，500个请求
+# Serializable序列化插件
+command + ,
+
+![image-20190311015954377](images/image-20190311015954377.png)
+
+
+
+![image-20190311020259239](images/image-20190311020259239.png)
+
+![image-20190311020320638](images/image-20190311020320638.png)
+
+![image-20190311020353484](images/image-20190311020353484.png)
+
+shift + control + i
