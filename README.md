@@ -1,5 +1,6 @@
 
 
+
 # macOS idea 调节字体大小
 快捷键 command + ，
 ![image-20190202204227125](images/image-20190202204227125.png)
@@ -264,5 +265,8 @@ Spring4.3中引进了｛@GetMapping、@PostMapping、@PutMapping、@DeleteMappin
  
 @PostMapping是一个组合注解，是@RequestMapping(method = RequestMethod.POST)的缩写。
 
-
-
+# 压测
+ab -n 100 -c 10 http://127.0.0.1/sell/skill/order/123456
+10个线程，100个请求
+ab -n 500 -c 100 http://127.0.0.1/sell/skill/order/123456
+100个线程，500个请求

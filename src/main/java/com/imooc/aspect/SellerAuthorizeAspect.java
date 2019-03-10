@@ -23,8 +23,8 @@ import javax.servlet.http.HttpServletRequest;
  * Created by 韦师兄
  * 2019-03-08 12:41
  */
-@Aspect
-@Component
+//@Aspect
+//@Component
 @Slf4j
 public class SellerAuthorizeAspect {
 
